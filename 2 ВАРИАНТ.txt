@@ -1,0 +1,32 @@
+2 ВАРИАНТ
+arr = list(map(int, input("Введите элементы массива через пробел: ").split()))
+
+negative_elements = [x for x in arr if x < 0]
+
+if negative_elements:
+    max_negative = max(negative_elements)
+    print(f"Максимальное отрицательное число: {max_negative}")
+else:
+    print("Отрицательных чисел в массиве нет.")
+
+
+2,
+rows = int(input("Введите количество строк: "))
+cols = int(input("Введите количество столбцов: "))
+
+matrix = []
+
+for i in range(rows):
+    row = list(map(int, input(f"Введите элементы строки {i+1} через пробел: ").split()))
+    matrix.append(row)
+
+max_value = float('-inf')
+max_index = (-1, -1)
+
+for i in range(rows):
+    for j in range(cols):
+        if matrix[i][j] > max_value:
+            max_value = matrix[i][j]
+            max_index = (i, j)
+
+print(f"Наибольший элемент: {max_value}, его индекс: {max_index}")
