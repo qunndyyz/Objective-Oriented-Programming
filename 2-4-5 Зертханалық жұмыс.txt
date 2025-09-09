@@ -1,0 +1,70 @@
+2.
+a = 7
+b = 3
+result = a - b
+print("Вычитание:", result)
+
+a = 6
+b = 7
+result = a + b
+print("Сложение:", result)
+
+a = 55
+b = 67
+result = a * b
+print("Умножение:", result)
+
+a = 2
+b = 3
+result = a ** b
+print("Возведение в степень:", result)
+
+a = 16
+b = 2
+result = a / b
+print("Деление:", result)
+
+a = 45
+b = 44
+result = a // b
+print("Целочистнное деление", result)
+
+a = 9
+b = 4
+result = a % b
+print("Остаток от деления:", result)
+
+5.
+lst = [1, 2, 3, 4, 5]
+reversed_lst = lst[::-1]
+print("Список в обратном порядке:", reversed_lst)
+
+def list_sort(lst):
+    return sorted(lst, key=abs, reverse=True)
+
+lst = [-5, 2, -3, 7, -1]
+sorted_lst = list_sort(lst)
+print("Сортировка по убыванию абсолютных значений:", sorted_lst)
+
+def list_sort(lst):
+    return sorted(lst, key=abs, reverse=True)
+
+lst = [-5, 2, -3, 7, -1]
+sorted_lst = list_sort(lst)
+print("Сортировка по убыванию абсолютных значений:", sorted_lst)
+
+def change(lst):
+    lst[0], lst[-1] = lst[-1], lst[0]
+    return lst
+
+lst = [10, 20, 30, 40]
+changed_lst = change(lst)
+print("Изменённый список:", changed_lst)
+4.
+i = 0
+while i < 5:
+    print("Итерация:", i)
+    i += 1
+
+for i in range(5):
+    print("Итерация:", i)
